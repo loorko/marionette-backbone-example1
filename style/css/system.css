@@ -12,33 +12,24 @@
   color:#fff;
   border-bottom:1px solid #eee;
   background-color: #2196f3;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 3px;
-   border-top-left-radius: 3px;
-   border-top-right-radius: 3px;
 }
 .mt-orange {
   background-color: #ff9800;
   color: white;
   border-bottom:1px solid #eee;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 3px;
-   border-top-left-radius: 3px;
-   border-top-right-radius: 3px;
 }
 
 .modal-content{
-  border-radius: 3px;
-  -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0);
-  -moz-box-shadow: 0 0px 0px rgba(0,0,0,0);
-  -o-box-shadow: 0 0px 0px rgba(0,0,0,0);
-  box-shadow: 0 0px 0px rgba(0,0,0,0);
+  border: 1px solid #a3aeb8;
+  border-radius: 0.1px;
+  -webkit-border-radius: 0.1px;
+  -moz-border-radius: 0.1px;
+  box-shadow: 0 0 0 5px rgba(223, 223, 223, 0.55);
+  -webkit-box-shadow: 0 0 0 5px rgba(223, 223, 223, 0.55);
+  -moz-box-shadow: 0 0 0 5px rgba(223, 223, 223, 0.55);
+  -o-box-shadow: 0 0 0 5px rgba(223, 223, 223, 0.55);
 }
 
 .modal-backdrop.in {
-  opacity: 0.15;
+  opacity: 0.2;
 }
