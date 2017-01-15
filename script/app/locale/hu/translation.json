@@ -1,0 +1,32 @@
+{
+  "SignUp": {
+    "Sign Up"           : "Regisztráció",
+    "Username"          : "Felhasználónév:",
+    "username"          : "felhasználónév",
+    "Email address"     : "Email cím:",
+    "email address"     : "email cím",
+    "Password"          : "Jelszó:",
+    "Repeat Password"   : "Jelszó ismétlése:",
+    "Language"          : "Nyelv:",
+    "select"            : "válasszon",
+    "Age"               : "Életkor:",
+    "I agree all your"  : "Egyetértek a",
+    "Terms of Services" : "felhasználási feltételekkel"
+  },
+  "Please enter an username"                  : "Kérem írjon be egy felhasználónevet",
+  "Please enter a password"                   : "Kérem írjon be egy jelszót",
+  "Not enough length (min 5 character)"       : "Nem elég hosszú (min 5 katakter)",
+  "Not enough length (min 8 character)"       : "Nem elég hosszú (min 8 katakter)",
+  "Too length (max 25 character)"             : "Túl hosszú (max 25 karakter)",
+  "The passwords does not match"              : "Jelszó nem eggyezik",
+  "Please enter an email address"             : "Kérem írjon be egy email címet",
+  "Please enter a valid email"                : "Kérem írjon be egy valid email címet",
+  "Please select a language"                  : "Kérem válasszon ki egy nyelvet",
+  "Please enter your age"                     : "Kérem írja be az életkorát",
+  "Please enter a valid number"               : "Kérem írjon be egy számot",
+  "Please enter a number between 18 and 100"  : "Kérem írjon be egy számot 18 és 100 között",
+  "Please terms of services"                  : "Kérem fogadja el a felhasználási feltételeket",
+  "Post": {
+    "List of posts": "Posztok listája"
+  }
+}
