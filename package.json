@@ -1,0 +1,18 @@
+{
+  "title":        "Backbone Marionette Skeleton",
+  "name":         "BackboneMarionetteApp",
+  "description":  "Marionette Backbone application skeleton - HTML + Backbone + Marionette + Handlebars + Requirejs + Bower + Bootstrap",
+  "version":      "0.0.1",
+  "author": {
+    "name":   "Roland Goreczky",
+    "email":  "goreczky.roland@gmail.com"
+  },
+  "homepage": "http://byroland.com",
+  "scripts": {
+    "bower": "bower install & bower-installer"
+  },
+  "dependencies": {
+    "bower":            "latest",
+    "bower-installer":  "latest"
+  }
+}

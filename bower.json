@@ -1,0 +1,88 @@
+{
+  "name": "backbone-marionette-app",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery"              : "latest",
+    "underscore"          : "latest",
+    "requirejs"           : "latest",
+    "backbone"            : "latest",
+    "backbone.controller" : "latest",
+    "backbone.marionette" : "latest",
+    "handlebars"          : "latest",
+    "bootstrap"           : "latest",
+    "text"                : "latest",
+    "i18next"             : "latest",
+    "i18next-xhr-backend" : "latest",
+    "backbone-validation" : "latest",
+    "backbone.syphon"     : "latest",
+    "font-awesome"        : "latest"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "install": {
+    "path": {
+      "js" : "application/script/vendor/lib",
+      "css": "application/style/css/lib",
+      "otf": "application/fonts",
+      "eot": "application/fonts",
+      "svg": "application/fonts",
+      "ttf": "application/fonts",
+      "woff" : "application/fonts",
+      "woff2": "application/fonts"
+    },
+    "sources": {
+      "jquery": [
+        "bower_components/jquery/dist/jquery.min.js"
+      ],
+      "underscore": [
+        "bower_components/underscore/underscore-min.js"
+      ],
+      "requirejs": [
+        "bower_components/requirejs/require.js"
+      ],
+      "backbone": [
+        "bower_components/backbone/backbone-min.js"
+      ],
+      "backbone.controller": [
+        "bower_components/backbone.controller/backbone.controller.js"
+      ],
+      "backbone.marionette": [
+        "bower_components/backbone.marionette/lib/backbone.marionette.min.js"
+      ],
+      "handlebars": [
+        "bower_components/handlebars/handlebars.min.js"
+      ],
+      "bootstrap": [
+        "bower_components/bootstrap/dist/js/bootstrap.min.js",
+        "bower_components/bootstrap/dist/css/bootstrap.min.css"
+      ],
+      "font-awesome": [
+        "bower_components/font-awesome/css/font-awesome.css",
+        "bower_components/font-awesome/fonts/FontAwesome.otf",
+        "bower_components/font-awesome/fonts/fontawesome-webfont.eot",
+        "bower_components/font-awesome/fonts/fontawesome-webfont.svg",
+        "bower_components/font-awesome/fonts/fontawesome-webfont.ttf",
+        "bower_components/font-awesome/fonts/fontawesome-webfont.woff",
+        "bower_components/font-awesome/fonts/fontawesome-webfont.woff2"
+      ],
+      "text": [
+        "bower_components/text/text.js"
+      ],
+      "i18next": [
+        "bower_components/i18next/i18next.min.js"
+      ],
+      "i18next-xhr-backend": [
+        "bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"
+      ],
+      "backbone-validation": [
+        "bower_components/backbone-validation/dist/backbone-validation-amd-min.js"
+      ],
+      "backbone.syphon": [
+        "bower_components/backbone.syphon/lib/backbone.syphon.min.js"
+      ]
+    }
+  }
+}
