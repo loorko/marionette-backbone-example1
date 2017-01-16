@@ -1,18 +1,31 @@
 {
-  "SignUp": {
-    "Sign Up"           : "Regisztráció",
-    "Username"          : "Felhasználónév:",
-    "username"          : "felhasználónév",
-    "Email address"     : "Email cím:",
-    "email address"     : "email cím",
-    "Password"          : "Jelszó:",
-    "Repeat Password"   : "Jelszó ismétlése:",
-    "Language"          : "Nyelv:",
-    "select"            : "válasszon",
-    "Age"               : "Életkor:",
-    "I agree all your"  : "Egyetértek a",
-    "Terms of Services" : "felhasználási feltételekkel"
-  },
+  "Sorry": "Elnézést",
+  "You need to sign in or register for this service": "Be kell lépnie vagy regisztrálnia a szolgáltatás eléréséhez",
+  "Sign In / Register": "Belépés / Regisztráció",
+  "Source code on": "Forráskódot megtekintheti",
+  "Close": "Bezárás",
+  "Sign In"   : "Belépés",
+  "Sign Up"   : "Regisztráció",
+  "Username"  : "Felhasználónév:",
+  "username"  : "felhasználónév",
+  "Please enter your username": "Kérjük írja be a felhasználói nevét",
+  "Please enter your password":  "Kérjük írja be a jelszavát",
+  "Password"  : "Jelszó:",
+  "Remember login": "Maradjon bejelentkeve",
+  "(if this is a private computer)": "ha ez nem nyilvános számítógép",
+  "Help to sign in": "Segítség a belépéshez",
+  "Register now for": "Regisztráljon most",
+  "FREE": "INGYEN",
+  "Yes please, register now!": "Regisztrálok most",
+  "Email address"     : "Email cím:",
+  "email address"     : "email cím",
+  "Repeat Password"   : "Jelszó ismétlése:",
+  "Language"          : "Nyelv:",
+  "select"            : "válasszon",
+  "Age"               : "Életkor:",
+  "I agree all your"  : "Egyetértek a",
+  "Terms of Services" : "felhasználási feltételekkel",
+    
   "Please enter an username"                  : "Kérem írjon be egy felhasználónevet",
   "Please enter a password"                   : "Kérem írjon be egy jelszót",
   "Not enough length (min 5 character)"       : "Nem elég hosszú (min 5 katakter)",
@@ -25,8 +38,5 @@
   "Please enter your age"                     : "Kérem írja be az életkorát",
   "Please enter a valid number"               : "Kérem írjon be egy számot",
   "Please enter a number between 18 and 100"  : "Kérem írjon be egy számot 18 és 100 között",
-  "Please terms of services"                  : "Kérem fogadja el a felhasználási feltételeket",
-  "Post": {
-    "List of posts": "Posztok listája"
-  }
+  "Please terms of services"                  : "Kérem fogadja el a felhasználási feltételeket"
 }

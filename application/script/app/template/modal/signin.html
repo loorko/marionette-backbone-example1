@@ -1,0 +1,51 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header mt-blue">
+      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">{{ t 'Close' }}</span></button>
+      <h4 class="modal-title" id="myModalLabel">{{ t 'Sign In' }}</h4>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="well">
+            <form id="signInForm">
+              <div class="form-group">
+                <label for="username" class="control-label">{{ t 'Username' }}</label>
+                <input type="text" class="form-control" id="username" name="username" title="{{ t 'Please enter your username' }}">
+                <span class="help-block hidden"></span>
+              </div>
+              <div class="form-group">
+                <label for="password" class="control-label">{{ t 'Password' }}</label>
+                <input type="password" class="form-control" id="password" name="password" title="{{ t 'Please enter your password' }}">
+                <span class="help-block hidden"></span>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="remember" id="remember"> {{ t 'Remember login' }}
+                </label>
+                <p class="help-block">{{ t '(if this is a private computer)' }}</p>
+              </div>
+              <button type="button" id="signIn" class="btn btn-success btn-block">{{ t 'Sign In' }}</button>
+              <a href="#" class="btn btn-default btn-block">{{ t 'Help to sign in' }}</a>
+            </form>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <p class="lead">{{ t 'Register now for' }} <span class="text-success">{{ t 'FREE' }}</span></p>
+          <ul class="list-unstyled" style="line-height: 1.96">
+            <li><span class="fa fa-check text-success"></span> See all your orders</li>
+            <li><span class="fa fa-check text-success"></span> Fast re-order</li>
+            <li><span class="fa fa-check text-success"></span> Save your favorites</li>
+            <li><span class="fa fa-check text-success"></span> Fast checkout</li>
+            <li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
+            <li><a href="/read-more/"><u>Read more</u></a></li>
+          </ul>
+          <p>
+            <button type="button" class="btn btn-info btn-block" id="signUpShow">{{ t 'Yes please, register now!' }}</button>
+            <button type="button" class="btn btn-default btn-block" id="signInClose">{{ t 'Close' }}</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

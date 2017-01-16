@@ -1,8 +1,9 @@
 define( ['backbone',
          'component/dialog',
          'view/layout/default',
-         'view/main'],
-function( Backbone, DialogHandler, viewLayout, mainView ) {
+         'view/main',
+         'view/footer'],
+function( Backbone, DialogHandler, viewLayout, mainView, footerView ) {
 
   var Application = Backbone.Marionette.Application.extend({
     region: 'body',
@@ -11,14 +12,6 @@ function( Backbone, DialogHandler, viewLayout, mainView ) {
       var view = new viewLayout();
       main.show( view );
     },
-    getCurrentRoute: function(){
-      return Backbone.history.fragment;
-    },
-    navigate: function(route, options){
-      options || (options = {});
-      Backbone.history.navigate(route, options);
-    },
-    
     onBeforeStart: function() {
       this.channel = {};
       this.channel.dialogHandler = new DialogHandler( this.getView() );
@@ -26,17 +19,12 @@ function( Backbone, DialogHandler, viewLayout, mainView ) {
       var layout = this.getView();
       var mainRegion = layout.getRegion('mainRegion');
       mainRegion.show( new mainView() );
+      
+      var footerRegion = layout.getRegion('footerRegion');
+      footerRegion.show( new footerView() );
     },
   
     onStart: function() {
-      
-      if(Backbone.history){
-        Backbone.history.start();
-        // Auth layer
-        if(this.getCurrentRoute() === ""){
-        //Application.trigger("contacts:list");
-        }
-      }
     }
   });
   
