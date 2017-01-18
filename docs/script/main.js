@@ -1463,7 +1463,7 @@ define( 'view/main/main',[ 'backbone',
 define('text!template/dashboard/dashboard.html',[],function () { return '<h1 class="page-header">{{ t \'Dashboard\' }}</h1>\n<div class="row placeholders">\n  <div class="col-xs-6 col-sm-3 placeholder">\n    <h4>Posts</h4>\n    <span class="text-muted" id="postsNumber">Loading...</span>\n  </div>\n  <div class="col-xs-6 col-sm-3 placeholder">\n    <h4>Comments</h4>\n    <span class="text-muted" id="commentsNumber">Loading...</span>\n  </div>\n  <div class="col-xs-6 col-sm-3 placeholder">\n    <h4>Albums</h4>\n    <span class="text-muted" id="albumsNumber">Loading...</span>\n  </div>\n  <div class="col-xs-6 col-sm-3 placeholder">\n    <h4>Photos</h4>\n    <span class="text-muted" id="photosNumber">Loading...</span>\n  </div>\n</div>';});
 
 define('config/endPoint',[],function(){
-  var _apiUrl = 'http://jsonplaceholder.typicode.com/';
+  var _apiUrl = 'https://jsonplaceholder.typicode.com/';
   // List of API URLs.
   var URLs = {
     posts: function() {
