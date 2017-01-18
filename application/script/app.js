@@ -1,30 +1,39 @@
-define( ['backbone',
-         'component/dialog',
-         'view/layout/default',
-         'view/main',
-         'view/footer'],
-function( Backbone, DialogHandler, viewLayout, mainView, footerView ) {
+define( [ 'backbone',
+          'component/dialog',
+          'component/loader',
+          'router/router',
+          'view/layout/default' ],
+function( Backbone, DialogHandler, LoaderHandler, Router, ViewLayout ) {
 
   var Application = Backbone.Marionette.Application.extend({
     region: 'body',
     initialize: function() {
+      this.router = new Router();
       var main = this.getRegion();
-      var view = new viewLayout();
-      main.show( view );
+      main.show( new ViewLayout() );
     },
+    
+    getCurrentRoute: function(){
+      return Backbone.history.fragment;
+    },
+    navigate: function(route, options){
+      options || (options = {});
+      Backbone.history.navigate(route, options);
+    },
+    
     onBeforeStart: function() {
-      this.channel = {};
-      this.channel.dialogHandler = new DialogHandler( this.getView() );
-      
-      var layout = this.getView();
-      var mainRegion = layout.getRegion('mainRegion');
-      mainRegion.show( new mainView() );
-      
-      var footerRegion = layout.getRegion('footerRegion');
-      footerRegion.show( new footerView() );
+      new DialogHandler( this.getView() );
+      new LoaderHandler( this.getView() );
     },
   
     onStart: function() {
+      if(Backbone.history){
+        Backbone.history.start();
+        if(this.getCurrentRoute() === ""){
+          Backbone.history.navigate('', {trigger:true});
+          // Auth layer
+        }
+      }
     }
   });
   

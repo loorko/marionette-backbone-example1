@@ -1,6 +1,6 @@
 {
-  "Sorry": "Elnézést",
-  "You need to sign in or register for this service": "Be kell lépnie vagy regisztrálnia a szolgáltatás eléréséhez",
+  "Welcome": "Üdvözöljük",
+  "You need to sign in or register for this service": "A szolgáltatás eléréséhez be kell jelentkeznie vagy regisztrálnia",
   "Sign In / Register": "Belépés / Regisztráció",
   "Source code on": "Forráskódot megtekintheti",
   "Close": "Bezárás",
@@ -25,7 +25,10 @@
   "Age"               : "Életkor:",
   "I agree all your"  : "Egyetértek a",
   "Terms of Services" : "felhasználási feltételekkel",
-    
+  "Logout"            : "Kilépés",
+  "Dashboard"         : "Áttekintés",
+  "Users"             : "Felhasználók",
+  
   "Please enter an username"                  : "Kérem írjon be egy felhasználónevet",
   "Please enter a password"                   : "Kérem írjon be egy jelszót",
   "Not enough length (min 5 character)"       : "Nem elég hosszú (min 5 katakter)",

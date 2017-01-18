@@ -1,6 +1,6 @@
 define(function(){
   var i18nextConfig = {
-    debug: true,
+    debug: false,
     lng: window.navigator.userLanguage || window.navigator.language || 'hu',
     fallbackLang: 'hu',
     defaultNS: 'translation',

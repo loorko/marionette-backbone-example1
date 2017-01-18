@@ -12,11 +12,12 @@ define( ['marionette',
       'close' : 'closeDialog'
     },
     ui: {
-      modal: '#modal'
+      modal   : '#modal'
     },
     showDialog: function(view, options) {
       if( this.mainView.hasRegion('dialogRegion') ){
         var dialogRegion = this.mainView.getRegion('dialogRegion');
+        if( $('.modal-backdrop').length ){ $('.modal-backdrop').remove(); }
         dialogRegion.show(view);
         if(typeof options !== 'undefined' && options.backdrop){
           $(this.ui.modal).modal({
@@ -27,8 +28,11 @@ define( ['marionette',
       }
     },
     closeDialog: function() {
-      $(this.ui.modal).modal('toggle');
-      $('.modal-backdrop').remove();
+      $(this.ui.modal).modal('hide');
+      $(this.ui.modal).on('hidden.bs.modal', function () {
+        $('#modal').remove();
+        if( $('.modal-backdrop').length ){ $('.modal-backdrop').remove(); }
+      });
     }
   });
   return Dialog;

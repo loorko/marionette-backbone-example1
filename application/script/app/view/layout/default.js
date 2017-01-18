@@ -18,6 +18,9 @@ define( [ 'marionette',
         },
         dialogRegion: {
           el: '#dialog-region'
+        },
+        loaderRegion: {
+          el: '#loader-region'
         }
       }
     });

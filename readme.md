@@ -25,31 +25,52 @@ Online: [https://loorko.github.io/marionette-backbone-example1](https://loorko.g
 ~~~~
 application/
  ├── index.html
- ├── font/
+ ├── fonts/
  ├── image/
  ├── script
  |    ├── app
  |    |    ├── collection/
- |    |    ├── component/
- |    |    ├── config/
+ |    |    ├── component
+ |    |    |     ├── dialog.js
+ |    |    |     └── loader.js
+ |    |    ├── config
+ |    |    |     ├── endPoint.js
+ |    |    |     └── i18next.js
  |    |    ├── controller/
- |    |    ├── extend/
+ |    |    ├── extend
+ |    |    |     └── validation.js
  |    |    ├── function/
- |    |    ├── helper/
- |    |    ├── locale/
- |    |    |     ├── de/
- |    |    |     └── en/
+ |    |    ├── helper
+ |    |    |     ├── apiUrl.js
+ |    |    |     ├── log.js
+ |    |    |     └── translate.js
+ |    |    ├── locale
+ |    |    |     ├── de
+ |    |    |     |    └── translation.json
+ |    |    |     └── en
+ |    |    |          └── translation.json
  |    |    ├── model/
  |    |    ├── router/
- |    |    ├── template/
+ |    |    ├── template
+ |    |    |     ├── component
+ |    |    |     |     └── loader.html
  |    |    |     ├── layout/
- |    |    |     └── modal/ 
- |    |    └── view/
+ |    |    |     └── modal/
+ |    |    └── view
+ |    |          ├── component
+ |    |          |     └── loader.html
  |    |          ├── layout/
- |    |          └── modal/ 
- |    └── vendor
- |         └── lib/
+ |    |          └── modal/
+ |    ├── vendor
+ |    |    └── lib/
+ |    ├── main.js
+ |    ├── config.js
+ |    └── main.js
  └── style
       └── css
-           └── lib/
+           ├── lib
+           |    └── bootsrtap
+           |          └── bootsrtap.min.css
+           ├── dashboard.css
+           └── system.css
 ~~~~

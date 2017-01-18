@@ -1,0 +1,1 @@
+define(["handlebars"],function(e){e.registerHelper("log",function(e){console.log(e)})});

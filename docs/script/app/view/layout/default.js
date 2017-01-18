@@ -1,7 +1,7 @@
 define( [ 'marionette',
           'handlebars',
           'text!template/layout/default.html' ],
-  function( Marionette, Handlebars, tmpl, ViewModalInformation, ViewModalConfirm, ViewModalForm, ViewModalAlert, modelSignUp ) {
+  function( Marionette, Handlebars, tmpl ) {
     var LayoutView = Marionette.View.extend({
       tagName: 'div',
       id     : 'app',
@@ -13,8 +13,14 @@ define( [ 'marionette',
         mainRegion: {
           el: '#main-region'
         },
+        footerRegion: {
+          el: '#footer-region'
+        },
         dialogRegion: {
           el: '#dialog-region'
+        },
+        loaderRegion: {
+          el: '#loader-region'
         }
       }
     });
